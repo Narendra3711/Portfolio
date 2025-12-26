@@ -1,8 +1,4 @@
 
-
-
-
-
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -85,10 +81,11 @@ function App() {
         </main>
       
       
-        <section id="about" className="about-section"  data-aos="fade-up">
+        <section id="about" className="about-section"  data-aos="fade-left">
   {/* Centered Top Heading */}
   <div className="about-header">
     <h1 className="about-main-title">About Me</h1>
+    <div className="title-underline"></div>
     <p className="about-subtitle">Every line of code brings a beautiful experience</p>
   </div>
 
@@ -113,15 +110,18 @@ function App() {
 
       <div className="about-actions">
         <button className="download-cv">
-          <span className="icon">📥</span> Download CV
+        
+          <a href="/myresume.pdf" download>
+                                        <i className="fa-solid fa-download"></i> Download CV
+                                    </a>
         </button>
         <button className="view-projects">
-          <span className="icon">{"</>"}</span> View Projects
+          
+          <a href="#projects" className="icon">{"</>"} View Projects</a>
         </button>
       </div>
     </div>
 
-    {/* Right Side: Circular Profile with Glow */}
     <div className="about-profile-container">
       <div className="profile-circle-glow">
         <img 
@@ -137,7 +137,7 @@ function App() {
 
 
 
-<section id="skills" className="skills-section" data-aos="fade-up">
+<section id="skills" className="skills-section" data-aos="fade-right">
   <div className="section-header-centered">
     <h1 className="skills-main-title">Technical Skills</h1>
     <div className="title-underline"></div>
@@ -191,7 +191,7 @@ function App() {
     ].map((skill, index) => (
       <div className="skill-item-card" key={index} style={{ "--i": index }}>
         <div className="skill-icon-wrapper">
-          {/* We just render the icon variable directly here */}
+          
           {skill.icon}
         </div>
         <span className="skill-name">{skill.name}</span>
@@ -202,7 +202,7 @@ function App() {
 
 
 
-<section id="education" className="education-section" data-aos="fade-up">
+<section id="education" className="education-section" data-aos="fade-left">
   <div className="section-header-centered">
     <h1 className="education-main-title">My Education</h1>
     <div className="title-underline"></div>
@@ -213,7 +213,7 @@ function App() {
     <div className="education-card glass-card">
       <div className="edu-icon">🎓</div>
       <div className="edu-content">
-        <h3>MCA</h3>
+        <h3>Master's Of Computer Applications [MCA]</h3>
         <p className="edu-place">Aditya University</p>
         <p className="edu-year">2024 - 2026</p>
         <div className="edu-separate">
@@ -223,7 +223,7 @@ function App() {
         </div>
         <div className="edu-score-badge">
           <span className="score-label">Status:</span>
-          <span className="score-value"></span>
+          <span className="score-value">Ongoing</span>
         </div></div>
       </div>
     </div>
@@ -251,7 +251,7 @@ function App() {
     <div className="education-card glass-card">
       <div className="edu-icon">🏫</div>
       <div className="edu-content">
-        <h3>Boar Of Intermediate Education [MPC]</h3>
+        <h3>Board Of Intermediate Education [MPC]</h3>
         <p className="edu-place">Divya Junior College</p>
         <p className="edu-year">2019 - 2021</p>
         <div className="edu-separate">
@@ -292,9 +292,73 @@ function App() {
   </div>
 </section>
 
+<section id="experience" className="experience-section" data-aos="fade-right">
+  <div className="section-header-centered">
+    <h1 className="experience-main-title">Experience</h1>
+    <div className="title-underline"></div>
+  </div>
+
+  <div className="experience-large-wrapper">
+    <div className="experience-large-box glass-card">
+      
+      
+      <div className="exp-large-header">
+        <div className="exp-company-info">
+          <div className="company-logo-placeholder">TH</div> 
+          <div>
+            <h2 className="exp-role-title">Full Stack Developer Intern</h2>
+            <h3 className="exp-company-name">Technical Hub</h3>
+          </div>
+        </div>
+        <div className="exp-time-location">
+          <p className="exp-date-range">June 2025</p>
+          <p className="exp-loc">Surampalem, AP</p>
+        </div>
+      </div>
+
+      <div className="exp-divider"></div>
 
 
-<section id="projects" className="projects-section" data-aos="fade-up">
+      <div className="exp-large-body">
+        <div className="exp-body-left">
+          <h4 className="body-label">Role Overview</h4>
+          <p className="exp-summary">
+           Developed MyNivas, a full-stack web application to help students easily find and manage hostel accommodations. The system allows admins to add, edit, and manage hostel details dynamically, while students can search, filter, and view hostels based on location, price, and facilities. Integrated a Node.js and MongoDB backend for real-time data handling and a React.js frontend for an interactive user experience. The project improves transparency, accessibility, and efficiency in hostel booking and management.
+          </p>
+          
+          <h4 className="body-label">Key Technical Contributions</h4>
+          <ul className="exp-bullet-list">
+             <li>Built RESTful APIs with Node.js/Express.js for hostel listings, reviews, and booking management.</li>
+            <li>Designed responsive and intuitive UI using React.js with custom CSS modules and animations.</li>
+            <li>Implemented MongoDB schemas for Hostels, Reviews, FAQs, and Users to support dynamic data.</li>
+            <li>Added review submission system with star ratings and feedback stored in MongoDB.</li>
+            <li>Integrated React Slick sliders for hostel image previews and dynamic review displays.</li>
+            <li>Used GitHub for version control and deployed the app on Render & Vercel for live usage.</li>
+          </ul>
+        </div>
+
+        <div className="exp-body-right">
+          <h4 className="body-label">Tools & Technologies Used</h4>
+          <div className="exp-tech-grid">
+            <span className="tech-tag">React.js</span>
+            <span className="tech-tag">Node.js</span>
+            <span className="tech-tag">Express</span>
+            <span className="tech-tag">MongoDB</span>
+            <span className="tech-tag">GitHub</span>
+            
+            <span className="tech-tag">Postman</span>
+          </div>
+
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="projects" className="projects-section" data-aos="fade-left">
   <div className="section-header-centered">
     <h1 className="projects-main-title">Featured Projects</h1>
     <div className="title-underline"></div>
@@ -347,7 +411,7 @@ function App() {
 
 
 
-<section id="certifications" className="cert-section" data-aos="fade-up">
+<section id="certifications" className="cert-section" data-aos="fade-right">
   <div className="section-header-centered">
     <h1 className="cert-main-title">Certifications</h1>
     <div className="title-underline"></div>
@@ -402,6 +466,7 @@ function App() {
 <section id="contact" className="contact-section" data-aos="zoom-in">
   <div className="contact-header-centered">
     <h1 className="contact-main-title">Let's Connect</h1>
+    <div className="title-underline"></div>
     <p className="contact-subtitle">I'm always excited to discuss new opportunities, collaborations, or projects.</p>
   </div>
 
