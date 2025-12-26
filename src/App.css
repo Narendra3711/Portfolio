@@ -1349,7 +1349,8 @@ body, html {
 .projects-main-title, 
 .skills-main-title, 
 .cert-main-title, 
-.contact-main-title {
+.contact-main-title ,
+.experience-main-title{
   
   font-size: clamp(1.8rem, 5vw, 2.5rem); 
   
@@ -1380,7 +1381,8 @@ body, html {
   .about-main-title, 
   .education-main-title, 
   .projects-main-title,
-  .skills-main-title {
+  .skills-main-title,
+  .experience-main-title{
     font-size: 1.8rem !important; 
     font-weight: 600;
     letter-spacing: 0.5px;
