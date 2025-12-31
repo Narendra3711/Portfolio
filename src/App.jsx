@@ -81,7 +81,7 @@ function App() {
         </main>
       
       
-        <section id="about" className="about-section"  data-aos="fade-left">
+        <section id="about" className="about-section"  data-aos="zoom-out">
   {/* Centered Top Heading */}
   <div className="about-header">
     <h1 className="about-main-title">About Me</h1>
@@ -202,7 +202,7 @@ function App() {
 
 
 
-<section id="education" className="education-section" data-aos="fade-left">
+<section id="education" className="education-section" data-aos="fade-down">
   <div className="section-header-centered">
     <h1 className="education-main-title">My Education</h1>
     <div className="title-underline"></div>

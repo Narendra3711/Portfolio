@@ -1377,6 +1377,8 @@ body, html {
   border-radius: 2px;
   opacity: 0.8;
 }
+
+
 @media (max-width: 768px) {
   .about-main-title, 
   .education-main-title, 
@@ -1402,3 +1404,4 @@ body, html {
   from { width: 0px; opacity: 0; }
   to { width: 60px; opacity: 1; }
 }
+
