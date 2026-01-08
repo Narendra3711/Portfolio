@@ -441,6 +441,14 @@ function App() {
         icon: "JS",
         link: "https://www.netacad.com/dashboard"
         
+      },
+      {
+        title: "Oracle Database Certification",
+        provider: "Oracle",
+        date: "2025",
+        icon: "💻",
+        link: "https://drive.google.com/file/d/10LD_ZuN-SWH3gACcZYbclSJ_BrCdFlUN/view?usp=drivesdk"
+        
       }
     ].map((cert, index) => (
       <div className="cert-card-premium" key={index} style={{ "--i": index }}>
